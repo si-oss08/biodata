@@ -348,6 +348,7 @@ svg {
 /* Projects section */
 .projects-section {
     animation: fadeUp 0.7s 0.4s ease both;
+    margin-top: 40px;
 }
 
 .project-cards {
