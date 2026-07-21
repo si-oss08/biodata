@@ -23,8 +23,8 @@ initBackToTop();
         glowRadius: 160,
         sparkle: false,
         waveAmplitude: 0,
-        gradientFrom: '#A855F7',
-        gradientTo: '#B497CF',
+        gradientFrom: '#c8a96e',
+        gradientTo: '#9b8254',
         glowColor: '#120F17'
     };
 
