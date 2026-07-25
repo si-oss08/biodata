@@ -1,0 +1,80 @@
+/* Mengatur gaya umum pada seluruh halaman */
+body {
+    font-family: Arial, sans-serif; /* Menentukan jenis huruf */
+    background-image: url(hacker-binary-5184x3456-13679.jpg);/* Warna latar belakang halaman */
+    background-repeat: no-repeat;/*gambar tidak diulang atau double*/
+    background-position: center;/*posisi di tengah*/
+    background-size: cover;/*ukuran penuh*/
+    background-attachment: fixed;/*membuat gambar tidak berubah*/
+    margin: 40px; /* Jarak dari tepi browser */
+    color: #333; /* Warna teks */
+}
+
+/* Judul halaman */
+h3 {
+    text-align: center; /* Menengahkan teks */
+    color: #ffffff; /* Warna teks judul */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px; /* Jarak bawah antara judul dan form */
+}
+
+/* Desain utama form */
+form{
+    width: 350px; /* Lebar form */
+    margin: 0 auto; /* Menengahkan form di halaman */
+    background: rgba(0, 0, 0, 0); /* Latar belakang form */
+    color: #ffffff; /* Warna teks judul */
+    padding: 25px; /* Ruang dalam form */
+    border-radius: 10px; /* Membuat sudut melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+}
+
+/* Label input */
+label {
+    display: block; /* Menampilkan label di baris baru */
+    margin-bottom: 8px; /* Jarak bawah antara label dan input */
+    font-weight: bold; /* Membuat teks label tebal */
+}
+
+/* Mengatur tampilan untuk input bertipe text dab date*/
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+    width: 100%;/* Lebar kotak input */
+    padding: 10px;/* Jarak antara teks dan tepi kotak */
+    border: none;/* Menghapus garis tepi bawaan browser */
+    border-radius: 10px;/* Membuat sudut kotak melengkung */
+    background-color: rgba(0, 0, 0, 0.7); /* Warna latar belakang hitam transparan (70%) */
+    color: white;/* Warna teks putih agar kontras */
+    font-size: 14px;/* Ukuran huruf di dalam input */
+    outline: none;/* Menghilangkan garis fokus default */
+    box-shadow: 0 0 5px rgb(60, 250, 72);/* Efek cahaya lembut warna cyan di sekitar kotak */
+}
+
+/* Efek saat input aktif (fokus) */
+input[type="text"]:focus {
+    border-color: #3498db; /* Garis tepi berubah jadi biru */
+    outline: none; /* Menghilangkan outline bawaan browser */
+}
+
+input[type="submit"] {
+    display: block;/* Supaya bisa diatur posisinya */
+    margin: 20px auto;/* Otomatis tengah secara horizontal */
+    width: 100px;/* Sedikit lebih lebar agar seimbang */
+    padding: 10px;/* Jarak antara teks dan tepi kotak */
+    border: none;/* Menghilangkan garis fokus default */
+    border-radius: 10px;/* Membuat sudut kotak melengkung */
+    background-color: rgba(0, 255, 255, 0.4); /* Warna cyan transparan */
+    color: white;/* Warna teks putih agar kontras */
+    font-size: 14px;/* Ukuran huruf di dalam input */
+    font-weight: bold;/* Menebalkan teks pada tombol agar lebih terlihat jelas dan menonjol */
+    cursor: pointer;/* Ubah kursor jadi tangan saat diarahkan */
+    box-shadow: 0 0 8px cyan;/* Efek cahaya serupa dengan input lainnya */
+    transition: 0.3s;/* Transisi halus saat hover */
+}
+
+/* Efek hover pada tombol */
+input[type="submit"]:hover {
+    background-color: #2c80b4; /* Warna tombol berubah saat diarahkan */
+}

@@ -1,0 +1,146 @@
+<html>
+<head>
+    <title>Aplikasi Input Data</title>
+    <style>
+        /* Mengatur gaya umum pada seluruh halaman */
+        body {
+            font-family: Arial, sans-serif; /* Menentukan jenis huruf */
+            background-image: url(gambar.jpeg); /* Warna latar belakang halaman */
+            background-repeat: no-repeat; /*gambar tidak diulang atau double*/
+            background-position: center; /*posisi di tengah*/
+            background-size: cover; /*ukuran penuh*/
+            background-attachment: fixed; /*membuat gambar tidak berubah*/
+            margin: 40px; /* Jarak dari tepi browser */
+            color: #333; /* Warna teks */
+        }
+
+        /* Judul halaman */
+        h3 {
+            text-align: center; /* Menengahkan teks */
+            color: #ffffff; /* Warna teks judul */
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px; /* Jarak bawah antara judul dan form */
+        }
+
+        /* Desain utama form */
+        form {
+            width: 350px; /* Lebar form */
+            margin: 0 auto; /* Menengahkan form di halaman */
+            background: rgba(0, 0, 0, 0); /* Latar belakang form */
+            color: #eadcdc; /* Warna teks judul */
+            padding: 25px; /* Ruang dalam form */
+            border-radius: 10px; /* Membuat sudut melengkung */
+        }
+
+        /* Label input */
+        label {
+            display: block; /* Menampilkan label di baris baru */
+            margin-bottom: 8px; /* Jarak bawah antara label dan input */
+            font-weight: bold; /* Membuat teks label tebal */
+        }
+
+        /* Mengatur tampilan untuk input bertipe text dab date*/
+        input[type="text"],
+        input[type="number"],
+        input[type="date"] {
+            width: 100%; /* Lebar kotak input */
+            padding: 10px; /* Jarak antara teks dan tepi kotak */
+            border: none; /* Menghapus garis tepi bawaan browser */
+            border-radius: 10px; /* Membuat sudut kotak melengkung */
+            background-color: rgba(0, 0, 0, 0.7); /* Warna latar belakang hitam transparan (70%) */
+            color: rgb(255, 255, 255); /* Warna teks putih agar kontras */
+            font-size: 14px; /* Ukuran huruf di dalam input */
+            outline: none; /* Menghilangkan garis fokus default */
+            box-shadow: 0 0 15px rgb(2, 2, 248); /* Efek cahaya lembut warna cyan di sekitar kotak */
+        }
+
+        /* Efek saat input aktif (fokus) */
+        input[type="text"]:focus {
+            border-color: #f50000; /* Garis tepi berubah jadi biru */
+            outline: none; /* Menghilangkan outline bawaan browser */
+        }
+
+        input[type="submit"] {
+            display: block; /* Supaya bisa diatur posisinya */
+            margin: auto; /* Otomatis tengah secara horizontal */
+            width: 100px; /* Sedikit lebih lebar agar seimbang */
+            padding: 10px; /* Jarak antara teks dan tepi kotak */
+            border: none; /* Menghilangkan garis fokus default */
+            border-radius: 10px; /* Membuat sudut kotak melengkung */
+            background-color: rgba(0, 0, 0, 0.7); /* Warna cyan transparan */
+            color: rgb(255, 255, 255); /* Warna teks putih agar kontras */
+            font-size: 14px; /* Ukuran huruf di dalam input */
+            font-weight: bold; /* Menebalkan teks pada tombol agar lebih terlihat jelas dan menonjol */
+            cursor: pointer; /* Ubah kursor jadi tangan saat diarahkan */
+            box-shadow: 0 0 20px rgb(2, 2, 248); /* Efek cahaya serupa dengan input lainnya */
+            transition: 0.3s; /* Transisi halus saat hover */
+        }
+
+        /* Efek hover pada tombol */
+        input[type="submit"]:hover {
+            background-color: #3490f9; /* Warna tombol berubah saat diarahkan */
+        }
+
+        /* Tombol kirim (submit) */
+        button{
+            display: block; /* Supaya bisa diatur posisinya */
+            margin: auto; /* Otomatis tengah secara horizontal */
+            width: 100px; /* Sedikit lebih lebar agar seimbang */
+            padding: 10px; /* Jarak antara teks dan tepi kotak */
+            border: none; /* Menghilangkan garis fokus default */
+            border-radius: 10px; /* Membuat sudut kotak melengkung */
+            background-color: rgba(0, 0, 0, 0.7); /* Warna cyan transparan */
+            font-size: 14px; /* Ukuran huruf di dalam input */
+            font-weight: bold; /* Menebalkan teks pada tombol agar lebih terlihat jelas dan menonjol */
+            cursor: pointer; /* Ubah kursor jadi tangan saat diarahkan */
+            box-shadow: 0 0 20px rgb(2, 2, 248); /* Efek cahaya serupa dengan input lainnya */
+            transition: 0.3s; /* Transisi halus saat hover */
+        }
+        button a {
+            text-decoration: none;
+            color: rgb(255, 255, 255); /* Warna teks putih agar kontras */
+        }
+
+        /* Efek saat input aktif (fokus) */
+        button:focus {
+            border-color: #00c8f5ff; /* Garis tepi berubah jadi biru */
+            outline: none; /* Menghilangkan outline bawaan browser */
+        }
+        
+        /* Efek hover pada tombol */
+        button:hover {
+            background-color: #3490f9; /* Warna tombol berubah saat diarahkan */
+        }
+    </style>
+</head>
+<body>
+    <h3>Input Data Mahasiswa</h3>
+    <form action="proses.php" method="POST">
+        <label for="Nama">Nama:</label>
+        <input type="text" id="Nama" name="Nama" value="" required placeholder="Nickname">
+        <br><br>
+
+        <label for="Alamat">Alamat:</label>
+        <input type="text" id="Alamat" name="Alamat" value="" required placeholder="Alamat Anda"> 
+        <br><br>
+
+        <label for="NPM">NPM:</label>
+        <input type="text" id="NPM" name="NPM" value="" required placeholder="NPM Mahasiswa">
+        <br><br>
+     
+        <label for="Tgl">Tgl Lahir:</label>
+        <input type="date" id="Tgl" name="Tgl" value="" required placeholder="Tgl Lahir"> 
+        <br><br>
+        
+        <label for="Nilai">Nilai:</label>
+        <input type="number" id="Nilai" name="Nilai" min="0" max="100" value="" required placeholder="Nilai Mahasiswa">
+        <br><br>
+        
+        <input type="submit" value="Masukkan">
+    </form>
+    <button>
+        <a href="landingpage.html">Kembali</a>
+    </button>
+</body>
+</html>

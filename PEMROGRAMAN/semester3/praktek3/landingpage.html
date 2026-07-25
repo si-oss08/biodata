@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Data Mahasiswa</title>
+    <style>
+    /* =====================
+    TEMA WARNA KAMPUS
+    (GANTI DI SINI)
+    ===================== */
+    :root {
+        --primary: #1e90ff;   /* warna utama kampus */
+        --secondary: #00bcd4;
+        --bg-dark: #0f172a;
+        --card-dark: #020617;
+        --text-dark: #f8fafc;
+    }
+
+    /* RESET */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+        background: var(--bg-dark);
+        color: var(--text-dark);
+        min-height: 100vh;
+    }
+
+    /* =====================
+    NAVBAR
+    ===================== */
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 40px;
+        background: var(--primary);
+        color: white;
+    }
+
+    nav h2 {
+        font-size: 22px;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 25px;
+        list-style: none;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    /* =====================
+    HERO SECTION
+    ===================== */
+    .hero {
+        min-height: calc(100vh - 70px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+    }
+
+    .card {
+        background: var(--card-dark);
+        padding: 50px;
+        border-radius: 22px;
+        width: 100%;
+        max-width: 1000px;
+        text-align: center;
+        box-shadow: 0 20px 45px rgba(0,0,0,0.4);
+    }
+
+    /* =====================
+    CONTENT
+    ===================== */
+    .card h1 {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    .card p {
+        font-size: 18px;
+        margin-bottom: 45px;
+        opacity: 0.9;
+    }
+
+    .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 25px;
+    }
+
+    .feature {
+        background: linear-gradient(135deg, var(--primary), var(--secondary));
+        padding: 30px;
+        border-radius: 18px;
+        color: white;
+    }
+
+    .feature h3 {
+        margin-bottom: 10px;
+    }
+
+    /* =====================
+    BUTTON
+    ===================== */
+    .buttons {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        padding: 15px 35px;
+        border-radius: 40px;
+        font-weight: bold;
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    .btn-primary {
+        background: var(--primary);
+        color: white;
+    }
+
+    .btn-outline {
+        border: 2px solid var(--primary);
+        color: var(--primary);
+    }
+
+    /* =====================
+    FOOTER
+    ===================== */
+    footer {
+        margin-top: 40px;
+        font-size: 14px;
+        opacity: 0.75;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <h2>📘 Data Mahasiswa</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Input Data</a></li>
+            <li><a href="tabel.php">Tabel Data</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="card">
+            <h1>Sistem Informasi Data Mahasiswa</h1>
+            <p>Kelola dan tampilkan data mahasiswa secara cepat, rapi, dan terstruktur</p>
+
+            <div class="features">
+                <div class="feature">
+                    <h3>✍ Input Data</h3>
+                    <p>Masukkan data mahasiswa dengan form sederhana dan efisien.</p>
+                </div>
+                <div class="feature">
+                    <h3>📊 Tabel Data</h3>
+                    <p>Lihat seluruh data mahasiswa dalam bentuk tabel.</p>
+                </div>
+                <div class="feature">
+                    <h3>🔒 Aman</h3>
+                    <p>Data tersimpan dengan aman di database.</p>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <a href="index.html" class="btn btn-primary">Input Data</a>
+                <a href="tabel.php" class="btn btn-outline">Lihat Tabel</a>
+            </div>
+        </div>
+    </section>
+
+    </body>
+</html>
