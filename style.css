@@ -708,7 +708,7 @@ canvas {
 
 .back-to-top:hover, .back-to-top:focus {
   background-color: var(--card-bg);
-  color: var(--card-bg);
+  color: var(--text-main);
   
 }
 .back-to-top.active-press {
